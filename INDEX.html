@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitBuddy - Fitness Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">💪 FitBuddy</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#bmi">BMI</a>
+            <a href="#workouts">Workouts</a>
+            <a href="#diet">Diet</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to <span>FitBuddy</span></h1>
+
+            <p>
+                Your personal fitness companion for a healthier
+                and stronger lifestyle.
+            </p>
+
+            <button onclick="scrollToBMI()">
+                Calculate BMI
+            </button>
+
+        </div>
+
+        <div class="hero-icon">
+            🏃‍♂️
+        </div>
+
+    </section>
+
+
+    <!-- BMI Section -->
+    <section id="bmi" class="section">
+
+        <h2>BMI Calculator</h2>
+
+        <p class="section-text">
+            Enter your height and weight to calculate your BMI.
+        </p>
+
+        <div class="bmi-box">
+
+            <label>Height (cm)</label>
+
+            <input
+                type="number"
+                id="height"
+                placeholder="Example: 170"
+            >
+
+            <label>Weight (kg)</label>
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="Example: 65"
+            >
+
+            <button onclick="calculateBMI()">
+                Calculate
+            </button>
+
+            <div id="bmiResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Workout Section -->
+    <section id="workouts" class="section workout-section">
+
+        <h2>Workout Plans</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">🏃</div>
+
+                <h3>Beginner</h3>
+
+                <p>
+                    Start your fitness journey with
+                    simple exercises.
+                </p>
+
+                <ul>
+                    <li>Walking - 20 min</li>
+                    <li>Squats - 10 reps</li>
+                    <li>Push-ups - 5 reps</li>
+                </ul>
+
+                <button onclick="startWorkout('Beginner')">
+                    Start Workout
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🏋️</div>
+
+                <h3>Intermediate</h3>
+
+                <p>
+                    Improve strength and endurance
+                    with regular workouts.
+                </p>
+
+                <ul>
+                    <li>Running - 30 min</li>
+                    <li>Squats - 20 reps</li>
+                    <li>Push-ups - 15 reps</li>
+                </ul>
+
+                <button onclick="startWorkout('Intermediate')">
+                    Start Workout
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🔥</div>
+
+                <h3>Advanced</h3>
+
+                <p>
+                    Challenge yourself with advanced
+                    fitness exercises.
+                </p>
+
+                <ul>
+                    <li>Running - 45 min</li>
+                    <li>Squats - 40 reps</li>
+                    <li>Push-ups - 30 reps</li>
+                </ul>
+
+                <button onclick="startWorkout('Advanced')">
+                    Start Workout
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Diet Section -->
+    <section id="diet" class="section">
+
+        <h2>Healthy Diet</h2>
+
+        <div class="diet-container">
+
+            <div class="diet-card">
+                🍎
+                <h3>Breakfast</h3>
+                <p>
+                    Oats, fruits, eggs and healthy
+                    protein-rich foods.
+                </p>
+            </div>
+
+            <div class="diet-card">
+                🥗
+                <h3>Lunch</h3>
+                <p>
+                    Vegetables, rice, dal and
+                    protein-rich foods.
+                </p>
+            </div>
+
+            <div class="diet-card">
+                🥛
+                <h3>Evening</h3>
+                <p>
+                    Fruits, nuts and healthy
+                    beverages.
+                </p>
+            </div>
+
+            <div class="diet-card">
+                🍲
+                <h3>Dinner</h3>
+                <p>
+                    Light meals with vegetables
+                    and protein.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Progress -->
+    <section class="section progress-section">
+
+        <h2>Fitness Progress</h2>
+
+        <div class="progress-box">
+
+            <h3>Daily Goal</h3>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <p id="progressText">
+                0% completed
+            </p>
+
+            <button onclick="increaseProgress()">
+                Complete Workout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact FitBuddy</h2>
+
+        <p>
+            Stay fit. Stay healthy. Stay strong. 💪
+        </p>
+
+        <p>
+            📧 fitbuddy@example.com
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 FitBuddy | Naan Mudhalvan Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
